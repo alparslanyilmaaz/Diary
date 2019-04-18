@@ -27,6 +27,7 @@ You can do same things in this page.
 ## To do
 - [x] change password of texts
 - [ ] create secret texts 
+- [ ] how to use page
 - [ ] change password of admin
 
 ## **License**
