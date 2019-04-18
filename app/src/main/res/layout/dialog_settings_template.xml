@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark">
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/colorPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        app:backgroundTint="@color/black"
+        app:rippleColor="@android:color/white"
+        app:srcCompat="@drawable/ic_format_color_text_black_24dp"
+        tools:ignore="VectorDrawableCompat"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/passwordCreator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        app:backgroundTint="@color/black"
+        app:rippleColor="@android:color/white"
+        app:srcCompat="@drawable/ic_lock_black_24dp"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_marginBottom="20dp"/>
+</LinearLayout>

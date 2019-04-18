@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings"
+    android:orientation="vertical"
+    android:id="@+id/settingsLayout">
+
+       <TextView
+           android:layout_marginTop="20dp"
+           android:id="@+id/textSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textAspect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aspect"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/textChooseTheme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Choose theme"
+                android:textSize="20sp"
+                android:layout_marginLeft="25dp"/>
+        <RadioGroup 
+            android:id="@+id/radioGroup1" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="25dp">
+
+            <RadioButton 
+                android:id="@+id/radioButton1" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="Dark Theme"
+                android:textSize="18sp"
+                android:textColor="@android:color/tab_indicator_text">
+            </RadioButton>
+
+            <RadioButton 
+                android:id="@+id/radioButton2" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_below="@+id/radioButton1" 
+                android:text="Light Theme"
+                android:textSize="18sp"
+                android:textColor="@android:color/tab_indicator_text">
+            </RadioButton>
+            <android.support.design.widget.FloatingActionButton
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/changeTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:rippleColor="@android:color/white"
+                app:srcCompat="@drawable/ic_check_black_24dp"
+                android:layout_gravity="right"
+                tools:ignore="VectorDrawableCompat" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:layout_marginLeft="25dp"
+            android:text="Account"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/crtAdmin"
+            android:text="Create an admin account."
+            android:textSize="20sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Switch
+                android:layout_marginTop="5dp"
+                android:textColor="@android:color/tab_indicator_text"
+                android:textSize="20sp"
+                android:text="Use Admin Account :  "
+                android:id="@+id/adminController"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/dltAdmin"
+            android:text="Delete an admin account."
+            android:textSize="20sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

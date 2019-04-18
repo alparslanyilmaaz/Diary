@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="colorPrimary">#00574B</color>
+    <color name="colorPrimaryDark">#05352D</color>
+    <color name="colorAccent">#534046</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="sideBar">#491F1F</color>
+    <color name="wheat">#C4C1BB</color>
+    <color name="darkMode">#41615B</color>
+    <color name="defaultBack">#C2B338</color>
+</resources>
